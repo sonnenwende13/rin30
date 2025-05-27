@@ -132,21 +132,21 @@ class Result
 //Массив с результатами
 const results = 
 [
-	new Result("Вам многому нужно научиться", 0),
-	new Result("Вы уже неплохо разбираетесь", 2),
-	new Result("Ваш уровень выше среднего", 4),
-	new Result("Вы в совершенстве знаете тему", 6)
+	new Result("Попробуй еще разок", 0),
+	new Result("Неплохо", 2),
+	new Result("Почти", 4),
+	new Result("Круто!", 6)
 ];
 
 //Массив с вопросами
 const questions = 
 [
-	new Question("2 + 2 = ", 
+	new Question("Европа - это спутник какой планеты?", 
 	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
+		new Answer("Юпитера", 1),
+		new Answer("Сатурна", 0),
+		new Answer("Меркурия", 0),
+		new Answer("Венеры", 0)
 	]),
 
 	new Question("2 * 2 = ", 
@@ -157,12 +157,12 @@ const questions =
 		new Answer("0", 0)
 	]),
 
-	new Question("2 / 2 = ", 
+	new Question("Какая из этих частей речи является служебной? ", 
 	[
-		new Answer("0", 0),
-		new Answer("1", 1),
-		new Answer("2", 0),
-		new Answer("3", 0)
+		new Answer("Предлог", 1),
+		new Answer("Глагол", 0),
+		new Answer("Наречие", 0),
+		new Answer("Союз", 0)
 	]),
 
 	new Question("2 - 2 = ", 
@@ -173,14 +173,46 @@ const questions =
 		new Answer("3", 0)
 	]),
 
-	new Question("2 + 2 * 2 = ", 
+	new Question("Где находится глабелла? ", 
 	[
-		new Answer("4", 0),
-		new Answer("6", 1),
-		new Answer("8", 0),
-		new Answer("10", 0)
+		new Answer("На лице", 1),
+		new Answer("В Европе", 0),
+		new Answer("В книгах Стивена Кинга", 0),
+		new Answer("Во вселенной Marvel", 0)
+	]),
+	
+	new Question("Столица Панамы? ", 
+	[
+		new Answer("Москва", 0),
+		new Answer("Париж", 0),
+		new Answer("Панама", 1),
+		new Answer("Мехико", 0)
 	]),
 
+	new Question("Столица России? ", 
+	[
+		new Answer("Москва", 1),
+		new Answer("Париж", 0),
+		new Answer("Мадрид", 0),
+		new Answer("Мехико", 0)
+	]),
+
+	new Question("Столица Германии? ", 
+	[
+		new Answer("Осло", 0),
+		new Answer("Париж", 0),
+		new Answer("Берлин", 1),
+		new Answer("Мехико", 0)
+	]),
+
+	new Question("Столица Швеции? ", 
+	[
+		new Answer("Осло", 0),
+		new Answer("Барселона", 0),
+		new Answer("Берлин", 0),
+		new Answer("Стокгольм", 1)
+	]),
+	
 	new Question("2 + 2 / 2 = ", 
 	[
 		new Answer("1", 0),
